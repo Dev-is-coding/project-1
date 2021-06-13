@@ -1,0 +1,150 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+
+    program1();
+    program2();
+    program3();
+    program4();
+    program5();
+    program6();
+    program7();
+    program8();
+    program9();
+    program10();
+    program11();
+    program12();
+
+  }
+
+  public static void program1() {
+    for (int i = 1; i <= 10; i++) {
+      System.out.println("GO");
+    }
+  }
+
+  public static void program2() {
+    for (int i = 1; i < 10; i++) {
+      System.out.println("TURN");
+    }
+  }
+
+  public static void program3() {
+    for (int i = 5; i < 20; i++) {
+      System.out.println("GO");
+    }
+  }
+
+  public static void program4() {
+    for (int i = 1; i < 12; i++) {
+      System.out.println(i * 5);
+    }
+  }
+
+  public static void program5() {
+    int start = 5;
+    int finish = 10;
+    for (int i = start; i < finish; i++) {
+      System.out.println("TURN");
+    }
+  }
+
+  public static void program6() {
+    for (int i = 15; i > 5; i = i - 5) {
+      System.out.println("TURN");
+    }
+  }
+
+  public static void program7() {
+    for (int j = 1; j < 12; j++) {
+
+      for (int k = 1; k < 12; k++) {
+        System.out.println(j * k);
+      }
+    }
+  }
+
+  public static void program8() {
+    int total = 0;
+    for (int i = 1; i <= 100; i++) {
+
+      total = total + i;
+      System.out.println(total);
+    }
+  }
+
+  public static void program9() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("enter two numbbbers");
+    int num1 = scan.nextInt();
+    int num2 = scan.nextInt();
+    for (int i = num1; i < num2; i++) {
+      num1 = 1 + num1;
+      System.out.println(num1);
+    }
+
+  }
+
+  public static void program10() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("enter a start number then a count number and finally a interval number");
+    int start = scan.nextInt();
+    int count = scan.nextInt();
+
+    int interval = scan.nextInt();
+
+    int number = start;
+    for (int i = 1; i < count; i++) {
+      number = number + interval;
+      System.out.println(number);
+    }
+  }
+
+  public static void program11() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("how many months in a year");
+    int months = scan.nextInt();
+    int rainmax = 0;
+System.out.println("enter the rainfall for each month");
+    for (int i = 0; i < months; i++) {
+      int rain = scan.nextInt();
+      if (rain > rainmax) {
+        rainmax = rain;
+      }
+    }
+    System.out.println("biggest amount of rain is " + rainmax);
+
+  }
+
+  public static void program12() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("enter the runs for the eleven teams");
+    int low = 100000;
+
+    for (int i = 0; i < 11; i++) {
+      int run = scan.nextInt();
+      if (low > run) {
+        low = run;
+      }else{ continue;}}
+System.out.println("lowest score is "+ low);
+      int high = 0;
+System.out.println("enter the scores again");
+      for (int j = 0; j < 11; j++) {
+ int runa = scan.nextInt();
+        if (high < run) {
+          high = run;
+        }else {continue;}}
+        System.out.println("high score is "+ high);
+        System.out.println("enter the scores again");
+        for (int e = 0; e < 11; e++) {
+ int runb = scan.nextInt();
+          int run1 = (runb / 11) + 0;
+          run1 = (runb / 11) + run1;
+
+          
+        }
+      System.out.println("average is "+ run1);
+    
+  }}
